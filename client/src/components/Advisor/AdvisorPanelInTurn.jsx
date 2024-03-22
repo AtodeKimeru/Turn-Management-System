@@ -5,13 +5,17 @@ function AdvisorPanelInTurn() {
   }
 
   return (
-    <>
-      <h1>Estado Asesor: Inactivo</h1>
-      <h3>Tiempo Estado Actual: #</h3>
+    <div className="advisor_panel_container">
+      <div className="advisor_panel_title">
+        <h1>Estado Asesor: Inactivo</h1>
+        <h3>Tiempo Estado Actual: #</h3>
+      </div>
 
-      <button onClick={onEndTurn}>Terminar Turno</button>
+      <div className="advisor_panel_buttons">
+        <button className="button_xl_1" onClick={onEndTurn}>Terminar Turno</button>
+      </div>
 
-      <div>
+      <div className="advisor_panel_info">
         <h2>
           Información del Turno
         </h2>
@@ -20,8 +24,8 @@ function AdvisorPanelInTurn() {
         <h3>Documento: #</h3>
       </div>
 
-      <p>Turnos en Cola: #</p>
-    </>
+      <p className="principal">Turnos en Cola: #</p>
+    </div>
   )
 }
 

@@ -15,6 +15,7 @@ function CurrentTurnsView() {
 
   return (
     <>
+      <h1 className="turns_title">Turnos en atención</h1>
       <TurnsPanel></TurnsPanel>
       {modalCurrentTurn == modalStates.turnToAttend && (
         <Modal>

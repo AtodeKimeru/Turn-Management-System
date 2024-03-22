@@ -1,12 +1,11 @@
 import { AdvisorPanelAvaible } from "../components/Advisor/AdvisorPanelAvaible";
-import { AdvisorLog } from "../scripts/AdvisorLog";
+import { AdvisorId } from "../components/Advisor/AdvisorId"
 
 function AdvisorAvaibleView() {
-  const { advisorDocument } = AdvisorLog()
 
   return (
     <>
-      <h2>Asesor: {advisorDocument}</h2>
+      <AdvisorId></AdvisorId>
       <AdvisorPanelAvaible></AdvisorPanelAvaible>
     </>
   )

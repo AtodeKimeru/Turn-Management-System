@@ -13,11 +13,11 @@ function UserRequest({ userDocument, OpenModalPriority, OpenModalTurnCreated}) {
   }
 
   return (
-    <>
+    <div className = "user_request_turn_container">
       <h1>Tipo de cita a solicitar</h1>
-      <button onClick={onRequestPriority}>Prioritario</button>
-      <button onClick={onRequestGeneral}>General</button>
-    </>
+      <button className="button_xl_1" onClick={onRequestPriority}>Prioritario</button>
+      <button className="button_xl_2" onClick={onRequestGeneral}>General</button>
+    </div>
   )
 }
 
